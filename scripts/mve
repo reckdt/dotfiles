@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+  echo "No python venv name supplied." 
+  exit 1
+fi
+
+if [[ ! -d "$HOME/envs" ]]; then
+  mkdir "$HOME/envs"
+  echo "Created ~/envs directory."
+fi 
+
+p="$HOME/envs/$1"
+
+if [[ -d $p ]]; then
+  echo "$p already exists."
+  exit 1
+fi 
+
+python3 -m venv "$p"
+echo "$p python venv created."
