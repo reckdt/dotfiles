@@ -7,5 +7,6 @@ echo "Setting up..."
 chmod +x $PWD/scripts/*
 ln -sf $PWD/scripts/* $HOME/bin
 ln -sf $PWD/vimrc $HOME/.vimrc
+ln -sf $PWD/aliases $HOME/.aliases
 
 echo "Complete."
