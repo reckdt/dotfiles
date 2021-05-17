@@ -1,3 +1,11 @@
 #!/bin/bash
 
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias q="exit"
+alias t="tmux"
+alias ll="ls -l"
+
 alias jsl="jekyll serve --livereload"
