@@ -4,8 +4,20 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+alias al="cat ~/.aliases"
+
 alias q="exit"
-alias t="tmux"
+alias da="deactivate"
+alias tm="tmux"
 alias ll="ls -l"
 
+# jekyll
 alias jsl="jekyll serve --livereload"
+
+# python
+alias pup="python -m pip install --upgrade pip"
+
+# pip
+alias pfr="pip freeze > requirements.txt"
+alias pir="pip install -r requirements.txt"
+
