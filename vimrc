@@ -1,39 +1,58 @@
-syntax on
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set ai
-set number
-set hlsearch
-set ruler
-set mouse=a
+syntax enable
+colorscheme peachpuff
 
+" automatically indent new lines
+set autoindent
+
+" automatically write files when changing when multiple files open
+set autowrite
+
+" activate line numbers
+set number
+
+" turn col and row position on in bottom right
+set ruler " see ruf for formatting
+
+" show command and insert mode
+set showmode
+
+" wrap around when searching
+set wrapscan
+
+" tabs
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set smartindent
+set smarttab
+
+" more risky, but cleaner
+set nobackup
+set noswapfile
+set nowritebackup
+
+" highlight search hits
+set hlsearch
+set incsearch
+set linebreak
+
+if $PLATFORM == 'mac'
+  " required for mac delete to work
+  set backspace=indent,eol,start
+endif
+
+" key maps
+set mouse=a
 inoremap jk <Esc>
 nnoremap zz :update<cr>
 
-autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=zsh | endif
-
-colorscheme peachpuff
+" bash for files with no extension
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=bash | endif
 
 " go to last cursor position
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
-
-"auto close {
-function! s:CloseBracket()
-    let line = getline('.')
-    if line =~# '^\s*\(struct\|class\|enum\) '
-        return "{\<Enter>};\<Esc>O"
-    elseif searchpair('(', '', ')', 'bmn', '', line('.'))
-        " Probably inside a function call. Close it off.
-        return "{\<Enter>});\<Esc>O"
-    else
-        return "{\<Enter>}\<Esc>O"
-    endif
-endfunction
-inoremap <expr> {<Enter> <SID>CloseBracket()
 
 call plug#begin('~/.vim/plugged')
   Plug 'dense-analysis/ale'  
