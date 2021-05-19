@@ -21,3 +21,6 @@ alias pup="python -m pip install --upgrade pip"
 alias pfr="pip freeze > requirements.txt"
 alias pir="pip install -r requirements.txt"
 
+# git
+alias gpuom="git push -u origin master"
+alias gpom="git push origin master"
