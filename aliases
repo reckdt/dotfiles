@@ -24,3 +24,6 @@ alias pir="pip install -r requirements.txt"
 # git
 alias gpuom="git push -u origin master"
 alias gpom="git push origin master"
+
+# django
+alias rs="python manage.py runserver"
