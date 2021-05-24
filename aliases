@@ -26,4 +26,5 @@ alias gpuom="git push -u origin master"
 alias gpom="git push origin master"
 
 # django
-alias rs="python manage.py runserver"
+alias drs="python manage.py runserver"
+alias dm="python manage.py migrate"
