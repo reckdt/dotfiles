@@ -5,26 +5,29 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 alias al="cat ~/.aliases"
-
 alias q="exit"
 alias da="deactivate"
 alias tm="tmux"
 alias ll="ls -l"
 
-# jekyll
-alias jsl="jekyll serve --livereload"
-
-# python
-alias pup="python -m pip install --upgrade pip"
-
-# pip
-alias pfr="pip freeze > requirements.txt"
-alias pir="pip install -r requirements.txt"
+# django
+alias drs="python manage.py runserver"
+alias dm="python manage.py migrate"
+alias dsh="python manage.py shell"
 
 # git
 alias gpuom="git push -u origin master"
 alias gpom="git push origin master"
 
-# django
-alias drs="python manage.py runserver"
-alias dm="python manage.py migrate"
+# jekyll
+alias jsl="jekyll serve --livereload"
+
+# pip
+alias pfr="pip freeze > requirements.txt"
+alias pir="pip install -r requirements.txt"
+
+# python
+alias pup="python -m pip install --upgrade pip"
+
+
+
