@@ -35,11 +35,10 @@ brew install pure
 
 #casks
 brew install --cask discord
-brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask eloston-chromium
 brew install --cask firefox
-
+brew install --cask db-browser-for-sqlite
 
 # Remove outdated versions from the cellar.
 brew cleanup
