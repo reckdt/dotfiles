@@ -32,6 +32,7 @@ brew install openssh
 # extra
 brew install tree
 brew install pure
+brew install htop
 
 #casks
 brew install --cask discord

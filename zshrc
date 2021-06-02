@@ -2,6 +2,8 @@
 export ZSH="/Users/ryan/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
+ZSH_DISABLE_COMPFIX=true
+
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh

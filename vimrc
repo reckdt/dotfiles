@@ -53,8 +53,3 @@ autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=bash | endif
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
-
-call plug#begin('~/.vim/plugged')
-  Plug 'dense-analysis/ale'  
-  Plug 'sheerun/vim-polyglot'
-call plug#end()
