@@ -1,0 +1,24 @@
+{
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "window.zoomLevel": 0,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["z", "z"],
+            "after": [":w"]  
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-f>": false
+    },
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.sideBar.location": "right",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
+}

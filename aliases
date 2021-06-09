@@ -27,5 +27,7 @@ alias pfr="pip freeze > requirements.txt"
 alias pir="pip install -r requirements.txt"
 
 # python
+alias pve="python3 -m venv .env"
+alias sea="source .env/bin/activate"
 alias pup="python -m pip install --upgrade pip"
-alias wp="which python""
+alias wp="which python"

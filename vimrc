@@ -36,10 +36,7 @@ set hlsearch
 set incsearch
 set linebreak
 
-if $PLATFORM == 'mac'
-  " required for mac delete to work
-  set backspace=indent,eol,start
-endif
+set backspace=indent,eol,start
 
 " key maps
 set mouse=a
@@ -53,3 +50,7 @@ autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=bash | endif
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
+
+call plug#begin()
+	Plug 'sheerun/vim-polyglot'
+call plug#end()

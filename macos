@@ -14,6 +14,9 @@ sudo nvram SystemAudioVolume=" "
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
+# hold and repeat key for vscode
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 ###############################################################################
 # Dock                                                                        #
 ###############################################################################
