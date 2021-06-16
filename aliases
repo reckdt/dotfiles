@@ -31,3 +31,6 @@ alias pve="python3 -m venv .env"
 alias sea="source .env/bin/activate"
 alias pup="python -m pip install --upgrade pip"
 alias wp="which python"
+
+# ruby
+alias bcf="bundle clean --force"

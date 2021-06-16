@@ -20,3 +20,4 @@ if [ -d "$HOME/bin" ]; then
     PATH="$PATH:$HOME/bin"
 fi
 
+export PATH="/usr/local/Cellar/ruby/3.0.1/bin:$PATH"
