@@ -34,6 +34,10 @@ brew install tree
 brew install pure
 brew install htop
 brew install ruby
+brew install python@3.7
+brew install python@3.8
+brew install qpdf
+brew install redis
 
 #casks
 brew install --cask discord
