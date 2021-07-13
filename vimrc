@@ -1,6 +1,6 @@
 syntax enable
 colorscheme peachpuff
-highlight Comment ctermfg=grey
+" highlight Comment ctermfg=grey
 
 " automatically indent new lines
 set autoindent
@@ -55,8 +55,11 @@ endif
 call plug#begin()
 	Plug 'sheerun/vim-polyglot'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
+"colorscheme gruvbox
+"set bg=dark
 
 " coc
 " ******************************************************************************
