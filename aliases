@@ -9,6 +9,8 @@ alias q="exit"
 alias da="deactivate"
 alias tm="tmux"
 alias ll="ls -l"
+alias ls='gls --color -h --group-directories-first'
+alias lsa='gls --color -h -a --group-directories-first'
 
 # django
 alias drs="python manage.py runserver"
