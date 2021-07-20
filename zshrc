@@ -22,3 +22,4 @@ fi
 
 export PATH="/usr/local/Cellar/ruby/3.0.1/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
+export PYTHONDONTWRITEBYTECODE=1
