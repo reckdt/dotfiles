@@ -38,6 +38,7 @@ set incsearch
 set linebreak
 
 set backspace=indent,eol,start
+set clipboard=unnamed
 
 " key maps
 set mouse=a
